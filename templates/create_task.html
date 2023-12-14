@@ -1,0 +1,55 @@
+<!-- templates/create_task.html -->
+{% extends 'base.html' %}
+
+{% block title %}Create Task{% endblock %}
+
+{% block content %}
+  <h2>Create Task</h2>
+  <form method="post" action="{{ url_for('create_task') }}">
+    <!-- Other form fields -->
+
+    <div class="form-group">
+      <label for="due_date">Due Date:</label>
+      <input type="text" class="form-control datetimepicker" id="due_date" name="due_date" required>
+    </div>
+
+    <div class="form-group">
+      <label for="alert_date">Alert Date:</label>
+      <input type="text" class="form-control datetimepicker" id="alert_date" name="alert_date" required>
+    </div>
+	
+    <div class="form-group">
+    	<label for="description">Description:</label>
+    	<input type="text" id="description" name="description" required>
+    </div>
+
+    <div class="form-group">
+	<label for="details">Details:</label>
+	<textarea id="details" name="details" required></textarea>    
+    </div>
+
+    <div class="form-group">
+	<label for="priority">Priority:</label>
+    	<select id="priority" name="priority" required>
+      		<option value="low">Low</option>
+      		<option value="medium">Medium</option>
+		<option value="high">High</option>
+    	</select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create Task</button>
+  </form>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.6/dist/flatpickr.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.6/dist/flatpickr.min.css">
+
+  <script>
+    flatpickr('.datetimepicker', {
+      enableTime: true,
+      dateFormat: 'm/d/Y H:i',
+    });
+  </script>
+  <p><a href="{{ url_for('index') }}">Back to Tasks</a></p>
+{% endblock %}
+
