@@ -1,5 +1,4 @@
-/* static/styles.css */
-
+/* Reset some default styles and set a background color */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -7,6 +6,7 @@ body {
     background-color: #f0f0f0;
 }
 
+/* Styling for the header, including background color, text color, and padding */
 header {
     background-color: #333;
     color: white;
@@ -14,10 +14,12 @@ header {
     text-align: center;
 }
 
+/* Styling for the navigation bar, including margin and positioning */
 nav {
     margin-top: 10px;
 }
 
+/* Styling for navigation links, including text decoration, color, and transitions */
 nav a {
     text-decoration: none;
     color: white;
@@ -27,19 +29,22 @@ nav a {
     transition: background-color 0.3s ease;
 }
 
+/* Hover effect for navigation links */
 nav a:hover {
     background-color: #555;
 }
 
+/* Styling for the main content, including padding */
 main {
     padding: 20px;
 }
 
+/* Styling for main heading */
 h1 {
     color: #333;
 }
 
-/* Form styles */
+/* Styling for forms, including background color, padding, border radius, and box shadow */
 form {
     max-width: 400px;
     margin: 0 auto;
@@ -49,11 +54,13 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Styling for form labels, including display and margin */
 label {
     display: block;
     margin-bottom: 8px;
 }
 
+/* Styling for form inputs and selects, including width, padding, margin, border, and border radius */
 input,
 select {
     width: 100%;
@@ -64,6 +71,7 @@ select {
     box-sizing: border-box;
 }
 
+/* Styling for form buttons, including background color, text color, padding, border, border radius, cursor, and transition */
 button {
     background-color: #4caf50;
     color: white;
@@ -74,11 +82,12 @@ button {
     transition: background-color 0.3s ease;
 }
 
+/* Hover effect for form buttons */
 button:hover {
     background-color: #45a049;
 }
 
-/* Task styles */
+/* Styling for task elements, including background color, padding, margin, border radius, and box shadow */
 .task {
     background-color: #fff;
     padding: 15px;
@@ -87,84 +96,29 @@ button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Styling for task headings */
 .task h2 {
     color: #333;
 }
 
+/* Styling for task paragraphs */
 .task p {
     color: #666;
 }
 
-/* Calendar styles */
-.ui-datepicker {
-    font-size: 12px;
-}
-form {
-    max-width: 400px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-label {
-    display: block;
-    margin-bottom: 8px;
-}
-
-input,
-select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-button {
-    background-color: #4caf50;
-    color: white;
-    padding: 8px 12px; /* Adjusted padding for smaller size */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-/* Task styles */
-.task {
-    background-color: #fff;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.task h2 {
-    color: #333;
-}
-
-.task p {
-    color: #666;
-}
-
-/* Calendar styles */
+/* Styling for the jQuery UI datepicker, including font size */
 .ui-datepicker {
     font-size: 12px;
 }
 
-/* Additional styles for better visibility of home button */
+/* Additional styles for better visibility of home button in navigation */
 nav a.home {
     background-color: #007bff;
     color: white;
 }
 
+/* Hover effect for home button in navigation */
 nav a.home:hover {
     background-color: #0056b3;
 }
+
